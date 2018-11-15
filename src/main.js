@@ -1,1 +1,1 @@
-alert('test바꿨다!!!!')
+alert('test바꿨다!')
