@@ -10,7 +10,27 @@ module.exports = {
     path: path.resolve(__dirname, "../dist"), // 지금 이 파일로부터
     publicPath: "/"
   },
+
+
   devServer:{ // 여기에 있는 index.html이 기본 위치
     contentBase: "dist"
+  },
+
+
+  //
+  module:{
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: "style-loader"
+          },
+          {
+            loader: "css-loader"
+          }
+        ]
+      }
+    ]
   }
 }

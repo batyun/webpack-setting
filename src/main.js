@@ -1,1 +1,1 @@
-alert('test바꿨다!')
+require('./main.css')
