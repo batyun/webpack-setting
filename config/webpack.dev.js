@@ -30,6 +30,34 @@ module.exports = {
             loader: "css-loader"
           }
         ]
+      },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].html"
+            }
+          },
+          {
+            loader: "extract-loader"
+          },
+          {
+            loader: "html-loader"
+          }
+        ]
+      },
+      {
+        test: /\.(jpg|png|gif)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options:{
+              name: "images/[name].[ext]"
+            }
+          }
+        ]
       }
     ]
   }

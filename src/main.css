@@ -3,11 +3,18 @@ body {
   margin:0;
 }
 
-h1 {
-  color:white;
-  height:100vh;
-  display:flex;
+.profile {
+  display: flex;
   align-items: center;
   justify-content: center;
+  height:100vh;
+  flex-flow: column;
+}
+
+h1 {
+  color:white;
   font-size:5em;
+}
+
+img {
 }
