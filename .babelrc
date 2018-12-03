@@ -2,5 +2,13 @@
   "plugins": [
     "@babel/plugin-transform-arrow-functions",
     "@babel/plugin-transform-async-to-generator"
+  ],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry"
+      }
+    ]
   ]
 }

@@ -2,7 +2,7 @@ const path = require("path")
 
 module.exports = {
   entry:{
-    main: "./src/main.js" // 웹팩 실행되는 곳으로부터
+    main: ["@babel/polyfill", "./src/main.js"] // 웹팩 실행되는 곳으로부터
   },
   mode: "development",
   output:{

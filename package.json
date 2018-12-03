@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --config=config/webpack.dev.js",
     "build": "webpack --config=config/webpack.dev.js",
     "babel": "babel"
@@ -16,6 +15,7 @@
     "@babel/core": "^7.1.6",
     "@babel/plugin-transform-arrow-functions": "^7.0.0",
     "@babel/plugin-transform-async-to-generator": "^7.1.0",
+    "@babel/preset-env": "^7.1.6",
     "babel-loader": "^8.0.4",
     "css-loader": "^1.0.1",
     "extract-loader": "^3.0.0",
@@ -26,5 +26,7 @@
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0"
+  }
 }
